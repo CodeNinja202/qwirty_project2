@@ -1,0 +1,126 @@
+.sub-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #4B79A1 0%, #283E51 51%, #4B79A1 100%);
+}
+
+
+
+@media (max-width: 768px) {
+  .horizontal.nav-list.full-width {
+    display: none;
+  }
+
+  .horizontal.nav-list.short-width {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .horizontal.nav-list.full-width {
+    display: flex;
+  }
+
+  .horizontal.nav-list.short-width {
+    display: none;
+  }
+}
+
+.horizontal.nav-list li:last-of-type a {
+  border-right: none;
+  text-decoration: none;
+}
+
+.horizontal {
+  list-style: none;
+}
+
+.horizontal.nav-list {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.horizontal.nav-list a {
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 0.25em 0.5em;
+  border-right: 1px solid #888;
+}
+
+.horizontal.nav-list a:hover {
+  border-top: 2px solid #c9fff8;
+  border-bottom: 2px solid #c9fff8;
+  margin-bottom: calc(.5em - 1px);
+  color: rgb(243, 242, 242);
+  font-size: 22px;
+  border-radius: .5rem;
+  text-decoration-line: none;
+}
+
+.sub-nav {
+  display: flex;
+  background: #eee;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.search-form {
+  display: flex;
+  flex: 1;
+}
+
+.search-form input {
+  padding: 0.25em 0.5em;
+  flex: 1;
+  outline: none;
+  border-radius: 1rem;
+  border: none;
+  border-bottom: 1px solid #44b;
+}
+
+.search-form button {
+  border-radius: 1rem;
+  background-color: #000046;
+  color: white;
+  padding: 0.25em 0.5em;
+  border: none;
+}
+
+.company-name {
+
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(25%, transparent), to(#FFFFFF));
+    font-size: 65px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-style: italic;
+    width: 22rem;
+    margin: 0 9rem 2.5rem 0;
+    text-align: center;
+}
+
+
+.credit-offer {
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #eee;
+  font-weight: bold;
+  font-size: 18px;
+  background: #228;
+  padding: 0.25rem 0.5rem;
+  flex-shrink: 0;
+  margin: 0 1rem;
+}
+
+.credit-offer:hover {
+  background: rgb(202, 20, 20);
+  box-shadow: 0 2px 5px -2px black;
+}
